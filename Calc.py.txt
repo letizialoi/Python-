@@ -1,0 +1,21 @@
+import math                                                                 #IMPORTAZIONE LIBRERIA MATH PER POTER POTER UTILIZZARE IL PIGRECO
+def quadrato():                                                             #DICHIARAZIONE NOME  FUNZIONE
+    perimetro1= int(input('Inserire valore lato: '))                        # DI SEGUITO IL BLOCCO DI ISTRUZIONI DA INSERIRE /INPUt/             
+    print('Perimetro1: ',perimetro1*4)
+def cerchio(): 
+    cerchio1= int(input('valore dal raggio: '))
+    print('Circonferenza: ',cerchio1*math.pi*2)
+
+def rettangolo():          
+    rettangolo1=int(input('valore della base rettangolo '))
+    rettangolo2=int(input("valore dell'altezza rettangolo "))
+    print('Perimetro: ', rettangolo1*2+rettangolo2*2)
+
+
+    ins1=input('Esegui\n1 perimetro del quadrato\n2 perimetro del rettangolo\n3 per circonferenza cerchio\n')
+     if ins1=='1':                                                         #INSERIMENTO DEL COSTRUTTO IF\ELIFE PER ESEGUIRE ISTRUZIONI A PATTO CHE LA CONDIZIONE SI VERIFICHI
+         quadrato()
+     elif ins1=='2':
+         rettangolo()
+     elif ins1=='3':
+         cerchio()
